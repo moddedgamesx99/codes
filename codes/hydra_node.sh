@@ -30,7 +30,7 @@ read -rp "🔧 Enter any custom npm command to run (or press Enter to skip): " c
 
 if [ -n "$custom_npm_cmd" ]; then
   echo "⚙️ Running custom npm command: $custom_npm_cmd"
-  npm run "$custom_npm_cmd" || { echo "❌ Failed to run the custom npm command."; exit 1; }
+  "$custom_npm_cmd" || { echo "❌ Failed to run the custom npm command."; exit 1; }
 else
   echo "⏩ Skipping custom npm command."
 fi
