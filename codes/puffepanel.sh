@@ -2,12 +2,12 @@
 
 # Display the banner
 cat << "EOF"
-███╗   ███╗ █████╗ ██╗  ██╗██╗███╗   ███╗ ██████╗ ██████╗ 
-████╗ ████║██╔══██╗██║  ██║██║████╗ ████║██╔═══██╗██╔══██╗
-██╔████╔██║███████║███████║██║██╔████╔██║██║   ██║██████╔╝
-██║╚██╔╝██║██╔══██║██╔══██║██║██║╚██╔╝██║██║   ██║██╔═══╝ 
-██║ ╚═╝ ██║██║  ██║██║  ██║██║██║ ╚═╝ ██║╚██████╔╝██║     
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝     
+
+___  ____ ____ ____ ____ _  _ _  _ ____    _  _ ____ ____ ___ _ _  _ ____ 
+|  \ |__/ |__| | __ |  | |\ | |\/| |       |__| |  | [__   |  | |\ | | __ 
+|__/ |  \ |  | |__] |__| | \| |  | |___    |  | |__| ___]  |  | | \| |__] 
+                                                                          
+ 
                                                           
 EOF
 
@@ -18,20 +18,20 @@ echo "🔧 Installing required packages..."
 apt install -y sudo
 apt install -y systemctl
 
-echo "🌐 Adding PufferPanel repository..."
+echo "🌐 Adding DragonMC Hosting repository..."
 curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh?any=true | sudo bash
 
 echo "📦 Updating package list..."
 sudo apt update
 
-echo "🎮 Installing PufferPanel..."
-sudo apt-get install -y pufferpanel
+echo "🎮 Installing DragonMC Hosting..."
+sudo apt-get install -y DragonMC Hosting
 
-echo "👤 Creating a PufferPanel user..."
-sudo pufferpanel user add
+echo "👤 Creating a DragonMC Hosting user..."
+sudo DragonMC Hosting user add
 
-echo "✅ Enabling and starting PufferPanel service..."
-sudo systemctl enable --now pufferpanel
+echo "✅ Enabling and starting DragonMC Hosting service..."
+sudo systemctl enable --now DragonMC Hosting
 
-echo "🔥 PufferPanel is installed and running!"
-echo "📢 Subscribe to my YouTube channel for more content! 👉 https://youtube.com/@mahimking11 🎥🎮"
+echo "🔥 DragonMC Hosting is installed and running!"
+
